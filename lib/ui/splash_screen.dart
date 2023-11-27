@@ -1,4 +1,4 @@
-import 'package:demo_flutter/Constants/CustomColors.dart';
+import 'package:demo_flutter/Constants/custom_colors.dart';
 import 'package:demo_flutter/Constants/SizeConfig.dart';
 //import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';

@@ -1,9 +1,9 @@
-import 'package:demo_flutter/ui/HomePage.dart';
+import 'package:demo_flutter/ui/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:demo_flutter/Constants/CustomColors.dart';
+import 'package:demo_flutter/Constants/custom_colors.dart';
 
-import 'package:demo_flutter/Widgets/Profile3List.dart';
+import 'package:demo_flutter/Widgets/profile3_list.dart';
 
 class Profile3 extends StatelessWidget {
   const Profile3({super.key});

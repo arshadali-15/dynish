@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:demo_flutter/Constants/CustomColors.dart';
-import 'package:demo_flutter/Widgets/fcScreenToggle.dart';
+import 'package:demo_flutter/Constants/custom_colors.dart';
+import 'package:demo_flutter/Widgets/fc_screen_toggle.dart';
 import 'package:demo_flutter/ui2/foodCourtScreens/fcScreen2.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';

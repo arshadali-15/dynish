@@ -1,5 +1,5 @@
-import 'package:demo_flutter/ui/LoginScreen.dart';
-import 'package:demo_flutter/ui2/HomePage2.dart';
+import 'package:demo_flutter/ui/login_screen.dart';
+import 'package:demo_flutter/ui2/home_page2.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 

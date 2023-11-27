@@ -1,9 +1,9 @@
-import 'package:demo_flutter/ui/HomePage.dart';
+import 'package:demo_flutter/ui/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:demo_flutter/Constants/CustomColors.dart';
-import 'package:demo_flutter/Widgets/ReusableCard.dart';
-import 'package:demo_flutter/Widgets/SingleWidget.dart';
+import 'package:demo_flutter/Constants/custom_colors.dart';
+import 'package:demo_flutter/Widgets/reusable_card.dart';
+import 'package:demo_flutter/Widgets/single_widget.dart';
 
 class Profile2 extends StatelessWidget {
   const Profile2({super.key});

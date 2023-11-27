@@ -1,10 +1,11 @@
-import 'package:demo_flutter/Constants/CustomColors.dart';
+import 'package:demo_flutter/Constants/custom_colors.dart';
 import 'package:demo_flutter/Constants/SizeConfig.dart';
 import 'package:demo_flutter/Widgets/signup_button_option.dart';
-import 'package:demo_flutter/ui/HomePage.dart';
-import 'package:demo_flutter/ui/OtpScreen.dart';
-import 'package:demo_flutter/ui/SetProfileScreen.dart';
-import 'package:demo_flutter/firebase/Auth.dart';
+import 'package:demo_flutter/ui/home_page.dart';
+import 'package:demo_flutter/ui/otp_screen.dart';
+import 'package:demo_flutter/ui/set_profile_screen.dart';
+import 'package:demo_flutter/firebase/auth.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -27,20 +28,20 @@ class _LoginScreenState extends State<LoginScreen> {
     SizeConfig().init(context);
 
     return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: 25,
-        backgroundColor: Colors.transparent,
-        leading: IconButton(
-          icon: Icon(
-            Icons.home,
-            color: CustomColors.black,
-          ),
-          onPressed: () {
-            Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => HomePage()));
-          },
-        ),
-      ),
+      // appBar: AppBar(
+      //   toolbarHeight: 25,
+      //   backgroundColor: Colors.transparent,
+      //   leading: IconButton(
+      //     icon: Icon(
+      //       Icons.home,
+      //       color: CustomColors.black,
+      //     ),
+      //     onPressed: () {
+      //       Navigator.of(context)
+      //           .push(MaterialPageRoute(builder: (context) => HomePage()));
+      //     },
+      //   ),
+      // ),
 
       // Wrap the Scaffold with SingleChildScrollView
       body: SingleChildScrollView(
@@ -57,12 +58,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 ? Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SizedBox(
-                        height: 17.h,
-                      ),
-                      Image.asset(
-                        'assets/images/login_img.png',
-                        width: 95.h,
+                      Padding(
+                        padding: const EdgeInsets.only(top: 16.0),
+                        child: Image.asset(
+                          'assets/images/login_img.png',
+                          width: 98.w,
+                          height: 45.h,
+                        ),
                       ),
                       SizedBox(
                         height: 2.h,
@@ -72,8 +74,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Image.asset('assets/images/line.png'),
                               SizedBox(
                                 width: SizeConfig.screenW! * .02,
                               ),
@@ -87,7 +89,6 @@ class _LoginScreenState extends State<LoginScreen> {
                               SizedBox(
                                 width: SizeConfig.screenW! * .02,
                               ),
-                              Image.asset('assets/images/line.png'),
                             ],
                           ),
                         ),
@@ -191,22 +192,9 @@ class _LoginScreenState extends State<LoginScreen> {
 
                       ElevatedButton(
                         onPressed: () async {
-                          if (_contactEditingController.text.length == 10) {
-                            Auth().phoneAuth(
-                                context,
-                                '${'+' + 91.toString() + _contactEditingController.text}'
-                                    .trim());
-                          } else {
-                            ScaffoldMessenger.of(context)
-                                .showSnackBar(const SnackBar(
-                              backgroundColor:
-                                 Colors.red,
-                              content: Text(
-                                "Input 10 digit Number",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                            ));
-                          }
+                          FocusScope.of(context).unfocus();
+                          Auth().phoneAuth(
+                              context, _contactEditingController.text);
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: CustomColors.orange,
@@ -245,8 +233,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                       Center(
                         child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Image.asset('assets/images/line.png'),
                             SizedBox(
                               width: SizeConfig.screenW! * .12,
                             ),
@@ -260,7 +248,6 @@ class _LoginScreenState extends State<LoginScreen> {
                             SizedBox(
                               width: SizeConfig.screenW! * .12,
                             ),
-                            Image.asset('assets/images/line.png'),
                           ],
                         ),
                       ),
@@ -282,7 +269,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
 
                       Padding(
-                        padding: const EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 16.0, vertical: 30),
                         child: InkWell(
                           onTap: () {
                             Navigator.of(context).push(MaterialPageRoute(

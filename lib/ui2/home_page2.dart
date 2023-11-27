@@ -1,5 +1,5 @@
-import 'package:demo_flutter/Constants/CustomColors.dart';
-import 'package:demo_flutter/ui2/RestaurentScreen/restaurentScreen1.dart';
+import 'package:demo_flutter/Constants/custom_colors.dart';
+import 'package:demo_flutter/ui2/RestaurentScreens/restaurant_screen1.dart';
 import 'package:demo_flutter/ui2/foodCourtScreens/fcScreen1.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';

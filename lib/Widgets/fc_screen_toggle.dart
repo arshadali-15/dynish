@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-import '../Constants/CustomColors.dart';
+import '../Constants/custom_colors.dart';
 
 class FCScreenToggle extends StatelessWidget {
   final String back;

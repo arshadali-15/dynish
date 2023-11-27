@@ -1,8 +1,10 @@
 
-import 'package:demo_flutter/ui/Profile2.dart';
-import 'package:demo_flutter/ui/Profile3.dart';
+import 'package:demo_flutter/ui/profile2.dart';
+import 'package:demo_flutter/ui/profile3.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+
+import 'profile1.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -26,7 +28,7 @@ class _HomePageState extends State<HomePage> {
               child: ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => Profile2()));
+                        MaterialPageRoute(builder: (context) => Profile1()));
                   },
                   child: Text(
                     "Profile 1",

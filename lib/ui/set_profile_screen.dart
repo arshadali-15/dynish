@@ -1,8 +1,8 @@
 import 'dart:io';
-import 'package:demo_flutter/Constants/CustomColors.dart';
+import 'package:demo_flutter/Constants/custom_colors.dart';
 import 'package:demo_flutter/Constants/SizeConfig.dart';
-import 'package:demo_flutter/firebase/UserRepo.dart';
-import 'package:demo_flutter/ui/LoginScreen.dart';
+import 'package:demo_flutter/firebase/user_repo.dart';
+import 'package:demo_flutter/ui/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';

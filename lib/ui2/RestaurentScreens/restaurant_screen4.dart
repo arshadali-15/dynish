@@ -1,13 +1,13 @@
 import 'dart:io';
 
-import 'package:demo_flutter/ui2/RestaurentScreen/restaurentScreen2.dart';
-import 'package:demo_flutter/ui2/RestaurentScreen/restaurentScreen5.dart';
+import 'package:demo_flutter/ui2/RestaurentScreens/restaurant_screen2.dart';
+import 'package:demo_flutter/ui2/RestaurentScreens/restaurant_screen5.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-import '../../Constants/CustomColors.dart';
-import '../../Widgets/fcScreenToggle.dart';
+import '../../Constants/custom_colors.dart';
+import '../../Widgets/fc_screen_toggle.dart';
 
 class RestaurentScreen4 extends StatefulWidget {
   const RestaurentScreen4({super.key});

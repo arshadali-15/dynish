@@ -1,13 +1,13 @@
 import 'dart:io';
 
 import 'package:demo_flutter/main.dart';
-import 'package:demo_flutter/ui2/HomePage2.dart';
+import 'package:demo_flutter/ui2/home_page2.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-import '../../Constants/CustomColors.dart';
-import '../../Widgets/fcScreenToggle.dart';
+import '../../Constants/custom_colors.dart';
+import '../../Widgets/fc_screen_toggle.dart';
 
 class FCScreen3 extends StatefulWidget {
   const FCScreen3({super.key});
