@@ -6,7 +6,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../../Constants/custom_colors.dart';
-import '../../Widgets/fc_screen_toggle.dart';
+import '../../Widgets/toggle_buttons.dart';
 
 class RestaurentScreen2 extends StatefulWidget {
   const RestaurentScreen2({super.key});
@@ -336,7 +336,7 @@ class _RestaurentScreen2State extends State<RestaurentScreen2> {
                 ],
               ),
 
-              FCScreenToggle(
+              CustomToggleWidget(
                 back: 'Cancel',
                 next: 'Next',
                 onPressedBack: () {

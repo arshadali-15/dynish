@@ -7,7 +7,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../../Constants/custom_colors.dart';
-import '../../Widgets/fc_screen_toggle.dart';
+import '../../Widgets/toggle_buttons.dart';
 
 class FCScreen3 extends StatefulWidget {
   const FCScreen3({super.key});
@@ -239,7 +239,7 @@ class _FCScreen3State extends State<FCScreen3> {
             ),
 
             /// NAVIGATOR
-            FCScreenToggle(
+            CustomToggleWidget(
               back: 'Back',
               next: 'Submit',
               onPressedBack: () {

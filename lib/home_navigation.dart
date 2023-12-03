@@ -1,3 +1,4 @@
+import 'package:demo_flutter/OrderHistoryScreens/order_history_screen.dart';
 import 'package:demo_flutter/ui/login_screen.dart';
 import 'package:demo_flutter/ui2/home_page2.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class HomeNavigation extends StatelessWidget {
             children: [
               Container(
                 height: 7.h,
-                width: 35.w,
+                width: 40.w,
                 margin: EdgeInsets.all(20),
                 child: ElevatedButton(
                     onPressed: () {
@@ -26,13 +27,13 @@ class HomeNavigation extends StatelessWidget {
                           MaterialPageRoute(builder: (context) => LoginScreen()));
                     },
                     child: Text(
-                      "Dynish Task 1",
+                      "Profile Screens",
                       style: TextStyle(fontSize: Adaptive.sp(15)),
                     )),
               ),
               Container(
                 height: 7.h,
-                width: 35.w,
+                width: 40.w,
                 margin: EdgeInsets.all(20),
                 child: ElevatedButton(
                     onPressed: () {
@@ -40,7 +41,21 @@ class HomeNavigation extends StatelessWidget {
                           MaterialPageRoute(builder: (context) => HomePage2()));
                     },
                     child: Text(
-                      "Dynish Task 2",
+                      "Restaurant and Food Court Screen",
+                      style: TextStyle(fontSize: 15.sp),
+                    )),
+              ),
+              Container(
+                height: 7.h,
+                width: 40.w,
+                margin: EdgeInsets.all(20),
+                child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => OrderHistoryScreen()));
+                    },
+                    child: Text(
+                      "Order History Screen",
                       style: TextStyle(fontSize: 15.sp),
                     )),
               ),

@@ -5,7 +5,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../../Constants/custom_colors.dart';
-import '../../Widgets/fc_screen_toggle.dart';
+import '../../Widgets/toggle_buttons.dart';
 import 'fcScreen3.dart';
 
 class FCScreen2 extends StatefulWidget {
@@ -323,7 +323,7 @@ class FCScreen2State extends State<FCScreen2> {
                   ],
                 ),
 
-                FCScreenToggle(
+                CustomToggleWidget(
                   back: 'Back',
                   next: 'Next',
                   onPressedBack: () {

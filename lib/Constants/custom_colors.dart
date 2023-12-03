@@ -10,5 +10,7 @@ class CustomColors{
   static Color lightGrey = Color(0xFFEDEDED);
   static Color darkGrey = Color(0xFF808080);
   static Color red = Color(0xFFFF5733 );
+  static Color green = Color(0xFF00DF3E );
+
 
 }

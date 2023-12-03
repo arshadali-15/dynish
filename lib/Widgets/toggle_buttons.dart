@@ -3,13 +3,13 @@ import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../Constants/custom_colors.dart';
 
-class FCScreenToggle extends StatelessWidget {
+class CustomToggleWidget extends StatelessWidget {
   final String back;
   final String next;
   final Function()? onPressedBack;
   final Function()? onPressedNext;
 
-  const FCScreenToggle({
+  const CustomToggleWidget({
     required this.back,
     required this.next,
     required this.onPressedBack,
@@ -42,7 +42,7 @@ class FCScreenToggle extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(2.0),
                 child: Container(
-                  width: 45.w,
+                  width: 40.w,
                   height: 4.h,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(25),
